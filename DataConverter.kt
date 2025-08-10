@@ -10,7 +10,7 @@ fun FeedApiModel.toFeedData(): Feed {
         reviewId = this.reviewId,
         userId = this.user.userId,
         name = this.user.userName,
-        restaurantName = this.restaurant.restaurantName,
+        restaurantName = this.restaurant.restaurantName ?: "",
         rating = this.rating,
         profilePictureUrl = BuildConfig.PROFILE_IMAGE_SERVER_URL + this.user.profilePicUrl,
         likeAmount = this.like_amount,
@@ -27,6 +27,6 @@ fun FeedApiModel.toFeedData(): Feed {
         visibleComment = false,
         contents = this.contents,
         reviewImages = this.pictures.map { BuildConfig.REVIEW_IMAGE_SERVER_URL + it.picture_url },
-        restaurantId = this.restaurant.restaurantId
+        restaurantId = this.restaurant.restaurantId ?: -1
     )
 }
