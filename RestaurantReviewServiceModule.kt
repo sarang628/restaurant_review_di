@@ -20,7 +20,7 @@ class RestaurantReviewServiceModule {
         return object : FetchReviewsUseCase {
             override suspend fun invoke(restaurantId: Int): List<Feed> {
                 try {
-                    return apiReview.getReviews(restaurantId).map { it.toFeedData() }
+                    return apiReview.getReviewsByRestaurantId(restaurantId).map { it.toFeedData() }
                 } catch (e: HttpException) {
                     throw Exception(e.handle())
                 }
