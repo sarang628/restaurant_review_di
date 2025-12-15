@@ -1,7 +1,7 @@
 package com.sarang.torang.di.restaurant_review_di
 
 import com.sarang.torang.BuildConfig
-import com.sarang.torang.data.Feed
+import com.sarang.torang.data.restaurantreview.Feed
 import com.sarang.torang.data.remote.response.FeedApiModel
 
 
