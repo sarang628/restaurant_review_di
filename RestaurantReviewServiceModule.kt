@@ -3,7 +3,7 @@ package com.sarang.torang.di.restaurant_review_di
 import com.sarang.torang.api.ApiRestaurant
 import com.sarang.torang.api.ApiReview
 import com.sarang.torang.api.handle
-import com.sarang.torang.data.Feed
+import com.sarang.torang.data.restaurantreview.Feed
 import com.sarang.torang.usecase.FetchReviewsUseCase
 import dagger.Module
 import dagger.Provides
